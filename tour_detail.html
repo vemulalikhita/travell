@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+     <link rel="stylesheet" href='{{ "static/style.css" }}' />
+
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+
+
+</head>
+
+<body>
+
+{% if messages %}
+    <ul class="messages">
+        {% for message in messages %}
+        <li {% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+
+        {% endfor %}
+    </ul>
+    {% endif %}
+
+
+<div class="col-sm-6 col-sm-offset-3">
+    {% block content %}
+    {% if instance.image %}
+    <img src="{{ instance.image.url }}" class="img-responsive" />
+    {% endif %}
+    <h1>{{ title }}</h1>
+
+{{ instance.first_name }}<br/>
+{{ instance.content }}%20<br/>
+
+{{ instance.id }}<br/>
+
+
+    <a href="https://wwww.facebook.com/sharer.php?u=http://CodingForEntrepreneurs.com/">Share on Facebook</a>
+
+		 <a href="http://127.0.0.1:8000/touristlogin/"> <button type="button" class="btn btn-info">Book your Ticket</button></a>
+
+<div class="copyright text-right">
+     <a href="edit"><button type="button" >Edit This tour</button>
+</a>
+    <a href="delete"><button type="button" >delete This tour</button>
+</a>
+</div>
+{% endblock content %}
+    </div>
+</body>
+</html>

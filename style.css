@@ -1,0 +1,63 @@
+.slider {
+  position: relative;
+  padding:40px;
+  background:#f8f8f8;
+  padding-top:130px;
+}
+
+.slider img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 45%;
+}
+
+#carousel-slider {
+  position: relative;
+}
+
+#carousel-slider .carousel-indicators {
+  bottom: -35px;
+}
+
+#carousel-slider .carousel-indicators li {
+  border: 1px solid #ffbd20;
+}
+
+#carousel-slider a i {
+	border: 1px solid #d9ae6a;
+	border-radius:50%;
+	font-size: 28px;
+	height: 50px;
+	padding: 8px;
+	position: absolute;
+	top: 50%;
+	width: 50px;
+	color:#fff;
+	background:#d9ae6a;
+}
+
+#carousel-slider a i:hover {
+  background:#deae62;
+  color:#fff;
+  border: 1px solid #d9ae6a;
+}
+
+#carousel-slider
+.carousel-control {
+  width:50%;
+}
+
+#carousel-slider .carousel-control.left i {
+  left:50px
+}
+
+#carousel-slider .carousel-control.right i {
+  right: 50px;
+}
+
+#carousel-slider
+.carousel-control.left,
+#carousel-slider
+.carousel-control.right {
+  background: none;
+}

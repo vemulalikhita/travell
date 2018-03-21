@@ -1,0 +1,472 @@
+ <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Mytour{% endblock %}</title>
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+<link href='https://fonts.googleapis.com/css?family=Satisfy' rel="stylesheet" type="text/css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+ <link rel="stylesheet" href='{{ "static/tour/style.css" }}' />
+
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+
+<style>
+    .slider {
+  position: relative;
+  padding:30px;
+  background:#f8f8f8;
+  padding-top:50px;
+}
+
+.carousel-inner > .item > img {
+  width:640px;
+  height:360px;
+}
+
+.slider img {
+ margin-left: auto;
+    margin-right: auto;
+    width: 35%;
+}
+
+#carousel-slider {
+  position: relative;
+}
+
+#carousel-slider .carousel-indicators {
+  bottom: -35px;
+}
+
+#carousel-slider .carousel-indicators li {
+  border: .5px solid #ffffff;
+}
+
+#carousel-slider a i {
+	border: 1px solid #d9ae6a;
+	border-radius:40%;
+	font-size: 28px;
+	height: 50px;
+	padding: 5px;
+	position: absolute;
+	top: 40%;
+	width: 50px;
+	color:#000000;
+	background:#000000;
+}
+
+#carousel-slider a i:hover {
+  background:#deae62;
+  color:.slider {
+  position: relative;
+  padding:30px;
+  background:#f8f8f8;
+  padding-top:130px;
+}
+
+.slider img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 45%;
+}
+
+#carousel-slider {
+  position: relative;
+}
+
+#carousel-slider .carousel-indicators {
+  bottom: -35px;
+}
+
+#carousel-slider .carousel-indicators li {
+  border: 1px solid #ffbd20;
+}
+
+#carousel-slider a i {
+	border: 1px solid #d9ae6a;
+	border-radius:50%;
+	font-size: 28px;
+	height: 50px;
+	padding: 8px;
+	position: absolute;
+	top: 50%;
+	width: 50px;
+	color: #000000;
+	background:#d9ae6a;
+}
+
+#carousel-slider a i:hover {
+  background:#deae62;
+  color: #000000;
+  border: 1px solid #d9ae6a;
+}
+
+#carousel-slider
+.carousel-control {
+  width:50%;
+}
+
+#carousel-slider .carousel-control.left i {
+  left:50px
+}
+
+#carousel-slider .carousel-control.right i {
+  right: 50px;
+}
+
+#carousel-slider
+.carousel-control.left,
+#carousel-slider
+.carousel-control.right {
+  background: none;
+}
+;
+  border: 1px solid #d9ae6a;
+}
+
+#carousel-slider
+.carousel-control {
+  width:50%;
+}
+
+#carousel-slider .carousel-control.left i {
+  left:70px
+}
+
+#carousel-slider .carousel-control.right i {
+  right: 70px;
+}
+
+#carousel-slider
+.carousel-control.left,
+#carousel-slider
+.carousel-control.right {
+  background: none;
+}
+
+footer {
+	padding:20px;
+	background:#000000;
+}
+
+footer h4 {
+	margin-bottom:0px;
+	text-transform:uppercase;
+	text-shadow:none;
+	font-weight:550;
+	color:#ffffff;
+}
+
+.contact-info {
+	color:#ffffff;
+}
+
+.contact-info ul {
+	list-style:none;
+	padding-left: 0;
+}
+
+.contact-info ul li i {
+	margin-bottom:10px;
+}
+
+.widget {
+  padding-left: 0;
+}
+
+ul.sidebar-gallery {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+.form-inline .form-group {
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle;
+	margin-top:6px;
+	display: inline-block;
+	padding: 10px 20px;
+	margin-bottom: 0;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 1.42857143;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	-ms-touch-action: manipulation;
+	  touch-action: manipulation;
+	cursor: pointer;
+	-webkit-user-select: none;
+	 -moz-user-select: none;
+	  -ms-user-select: none;
+		  user-select: none;
+	background-image: none;
+	border-radius: 4px;
+	background-color: #ffffff;
+}
+
+ul.social-network {
+	list-style:none;
+	margin-top:5px;
+	padding:10px;
+	transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+
+
+ul.social-network li {
+	display:inline;
+	margin: 0 20px;
+	font-size:25px;
+	margin-left:-10px;
+}
+
+ul.social-network li a {
+	color:#ffffff;
+}
+.social-network li:hover .fa-twitter {
+  color: ##ffffff;
+}
+.social-network li:hover .fa-facebook {
+  color: ##ffffff;
+}
+.social-network li:hover .fa-google-plus {
+  color: ##ffffff;
+}
+.social-network li:hover .fa-pinterest {
+  color: ##ffffff;
+}
+.social-network li:hover .fa-linkedin {
+  color: #ffffff;
+}
+.social-network li:hover .fa-youtube-play {
+  color: #ffffff;
+}
+.social-network li:hover .fa-dribbble {
+  color: #ffffff ;
+}
+.social-network li:hover .fa-pinterest-square {
+  color: #ffffff;
+}
+
+.copyright {
+	margin-top:10px;
+}
+
+.copyright a {
+	color:#ffffff;
+	font-weight:600;
+	font-size:12px;
+	text-shadow:none;
+}
+
+</style>
+</head>
+
+
+<nav class="navbar navbar-inverse"...>
+
+        <div class="container-fluid">
+
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="topNavBar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Explore new world</a>
+        </div>
+
+
+        <div class="collapse navbar-collapse" id="topNavBar">
+            <ul class="nav navbar-nav">
+                <li class="active" >
+
+                </li>
+
+                <li class="" >
+                    <a href="">
+                        <span class="glyphicon glyphicon-train" aria-hidden="true"></span>&nbsp;
+                        Travel
+                    </a>
+                </li>
+
+            </ul>
+
+            <form class="navbar-form navbar-left" role="search" method="get" action="">
+                <div class="form.group">
+                    <input type="text" class="form-control" name="q" value="">
+
+                <button type="submit" class="btn btn-default">Search</button>
+                </div>
+            </form>
+
+            <ul class="nav navbar-nav navbar-right">
+                {% if not request.user.is_authenticated %}
+               <li class="" >
+                    <a href="touristlogin">
+                        <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>&nbsp;
+                        LogIn
+                    </a></li>
+
+                 <li class="" >
+                    <a href="touristregister">
+                        <span class="glyphicon glyphicon-off" aria-hidden="true"></span>&nbsp;
+                        Register New Account
+                    </a>
+                    {% else %}
+                 <a href="touristregister">
+                        <span class="glyphicon glyphicon-off" aria-hidden="true"></span>&nbsp;
+                        Log out
+                    </a></li>
+                   {% endif %}
+            </ul>
+
+        </div>
+
+
+    </div>
+</nav>
+
+
+    <div class="slider">
+      <div class="">
+        <div id="about-slider">
+          <div id="carousel-slider" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators visible-xs">
+              <li data-target="#carousel-slider" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel-slider" data-slide-to="1"></li>
+              <li data-target="#carousel-slider" data-slide-to="2"></li>
+            </ol>
+
+            <div class="carousel-inner">
+              <div class="item active">
+                <img src="http://images.says.com/uploads/story_source/source_image/595154/9237.jpg" class="img-responsive" alt="">
+              </div>
+              <div class="item">
+                <img src="http://www.thelavishnomad.com/wp-content/uploads/2017/08/Group-Travel-850x354.jpg" class="img-responsive" alt="">
+              </div>
+              <!--<div class="item">
+                <img src="img/4.png" class="img-responsive" alt="">
+              </div>-->
+			  <div class="item">
+                <img src="https://qph.fs.quoracdn.net/main-qimg-bc979fc1ceca02f317472cabad49f528-c" class="img-responsive" alt="">
+              </div>
+                <div class="item">
+                <img src="https://d3rr2gvhjw0wwy.cloudfront.net/uploads/activity_headers/158710/1200x800-1-70-360dac6bc64ab9761b961c4f561a015a.jpg" class="img-responsive" alt="">
+              </div>
+            </div>
+
+            <a class="left carousel-control hidden-xs" href="#carousel-slider" data-slide="prev">
+							<i class="fa fa-angle-left"></i>
+						</a>
+
+            <a class=" right carousel-control hidden-xs" href="#carousel-slider" data-slide="next">
+							<i class="fa fa-angle-right"></i>
+						</a>
+          </div>
+          <!--/#carousel-slider-->
+        </div>
+        <!--/#about-slider-->
+      </div>
+    </div>
+    <br/>
+<div class="container">
+    <div class="column">
+    <span class="pull-right">
+        <div class='col-sm-3'>
+            <div class="form-group">
+                <div class='input-group date' id='datetimepicker5'>
+                    <input type='text' class="form-control" />
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+            </div></div></span></div>
+
+        <script type="text/javascript">
+            $(function () {
+                $('#datetimepicker5').datetimepicker({
+                    defaultDate: "11/1/2013",
+                    disabledDates: [
+                        moment("12/25/2013"),
+                        new Date(2013, 11 - 1, 21),
+                        "11/22/2013 00:53"
+                    ]
+                });
+            });
+        </script>
+&nbsp;&nbsp;&nbsp;<a href="create"><button type="button" class="btn btn-info btn-lg">Organize a tour</button>
+</a>
+</div>
+
+
+    {% block content %}
+
+      <h1> Upcoming {{ title }} </h1>
+
+
+<div class="row">
+{% for obj in queryset %}
+
+  <div class="col-sm-3 col-sm-offset-3">
+    <div class="thumbnail">
+        {% if obj.image %}
+      <img src="{{ obj.image.url }}" class="img-responsive" />
+        {% endif %}
+        <div class="caption">
+        <h3><a href='{{ obj.get_absolute_url }}'>{{ obj.first_name }}</a><br/>
+</h3>
+        <p>{{ obj.content|linebreaks|truncatechars:20 }}<br/>
+</p>
+        <p><a href="{{ obj.get_absolute_url }}" class="btn btn-primary" role="button">View</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% cycle "" "<div class='col-sm-12'><hr></div></div><div class='row'>" %}
+
+{% endfor %}
+
+  {% endblock content %}
+
+</div>
+
+ <div class="copyright text-center">
+     <a href="touristlist"><button type="button" class="btn btn-info btn-lg">View Tourist List</button>
+     </a></div>
+
+<footer>
+
+    <div class="container">
+      <div class="social-icon">
+        <div class="col-md-6">
+          <ul class="social-network">
+            <li><a href="" class="fb tool-tip" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="" class="twitter tool-tip" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="" class="gplus tool-tip" title="Google Plus"><i class="fa fa-google-plus"></i></a></li>
+            <li><a href="" class="linkedin tool-tip" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="" class="ytube tool-tip" title="You Tube"><i class="fa fa-youtube-play"></i></a></li>
+          </ul>
+        </div>
+
+
+</div>
+
+
+      </div>
+
+
+
+</footer>
+
+</body>
+</html>

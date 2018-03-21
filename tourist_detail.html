@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tourist detail</title>
+</head>
+<body>
+
+{% if messages %}
+    <ul class="messages">
+        {% for message in messages %}
+        <li {% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+
+        {% endfor %}
+    </ul>
+    {% endif %}
+
+<h1>{{ title }}</h1>
+
+{{ instance.name }}<br/>
+{{ instance.content }}<br/>
+{{ instance.id }}<br/>
+
+<div class="copyright text-right">
+     <a href="touristupdate"><button type="button" >Edit This tourist</button>
+</a>
+    <a href="touristdelete"><button type="button" >delete This tourist</button>
+</a>
+</div>
+
+</body>
+</html>
